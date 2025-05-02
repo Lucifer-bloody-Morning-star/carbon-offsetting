@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Offset Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Carbon Offset</div>
+            <ul>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Offset Your Carbon Footprint</h1>
+            <p>Calculate and offset your carbon emissions with verified carbon offset projects</p>
+        </section>
+
+        <section id="calculator" class="calculator">
+            <h2>Carbon Footprint Calculator</h2>
+            <div class="calculator-form">
+                <div class="input-group">
+                    <label for="transportation">Transportation (km/year)</label>
+                    <input type="number" id="transportation" placeholder="Enter kilometers">
+                </div>
+                <div class="input-group">
+                    <label for="electricity">Electricity Usage (kWh/month)</label>
+                    <input type="number" id="electricity" placeholder="Enter kWh">
+                </div>
+                <div class="input-group">
+                    <label for="flights">Flights (hours/year)</label>
+                    <input type="number" id="flights" placeholder="Enter flight hours">
+                </div>
+                <button id="calculate-btn">Calculate Footprint</button>
+            </div>
+            <div class="results" id="results">
+                <h3>Your Carbon Footprint</h3>
+                <div class="footprint-display">
+                    <span id="total-footprint">0</span>
+                    <span>kg CO₂/year</span>
+                </div>
+                <button id="offset-btn">Offset Now</button>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Available Offset Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d" alt="Forest Conservation">
+                    <h3>Forest Conservation</h3>
+                    <p>Protect and restore vital forest ecosystems</p>
+                    <button class="project-btn">Learn More</button>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d" alt="Renewable Energy">
+                    <h3>Renewable Energy</h3>
+                    <p>Support clean energy projects worldwide</p>
+                    <button class="project-btn">Learn More</button>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d" alt="Community Projects">
+                    <h3>Community Projects</h3>
+                    <p>Empower local communities with sustainable solutions</p>
+                    <button class="project-btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: sce22am004@sairamtap.edu.in</p>
+                <p>Phone: +91 8608289611</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/callmelucifer?igsh=bHBpYzFqaGJmcG52"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Carbon Offset. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
